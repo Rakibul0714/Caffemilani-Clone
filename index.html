@@ -40,15 +40,509 @@
                     </div>
                 </div>
                 <div class="h-6 w-px bg-gray-300"></div>
-                   <div class="flex gap-4"> 
+                <div class="flex gap-4">
                     <img src="Assets\user_icon_149851.svg" class="size-6">
-                    <img src="Assets\search.svg"class="size-6">
-                    <img src="Assets\bag.svg"class="size-6">
-                   </div>
+                    <img src="Assets\search.svg" class="size-6">
+                    <img src="Assets\bag.svg" class="size-6">
+                </div>
             </div>
             </div>
         </nav>
     </section>
+    <section>
+        <!-- TOP CREAM BAR (logo sits here, overlapping hero) -->
+        <div class="flex justify-center items-center  relative z-10">
+            <div class="absolute left-1/2 -translate-x-1/2 -bottom-30 z-50">
+                <img src="Assets\Logo_-_CaffeMilani.svg" alt="Milani logo icon" class="w-60 h-60 mt-1" />
+            </div>
+        </div>
+
+        <!-- HERO SECTION -->
+        <div class="relative w-full min-h-[600px] overflow-hidden">
+
+            <!-- Split background images with overlay -->
+            <div class="absolute inset-0 flex z-0">
+
+                <!-- Left: Lake Como image -->
+                <div class="w-1/2 h-full relative">
+                    <img src="Assets\caffe-milani-lago-di-como-barca.webp" alt="Lake Como"
+                        class="w-full h-full object-cover" />
+                    <!-- Dark overlay on lake image -->
+                    <div class="absolute inset-0 bg-black/40"></div>
+                </div>
+
+                <!-- Right: Coffee beans image -->
+                <div class="w-1/2 h-full relative">
+                    <img src="Assets\caffe-milani-chicchi-caffe-tostato.webp" alt="Coffee beans"
+                        class="w-full h-full object-cover" />
+                    <!-- Dark overlay on coffee beans image -->
+                    <div class="absolute inset-0 bg-black/50"></div>
+                </div>
+
+            </div>
+
+            <!-- Hero Content (above images) -->
+            <div
+                class="relative z-10 flex flex-col items-center justify-center text-center text-white min-h-[600px] px-6 pt-24 pb-12">
+
+                <!-- Since 1937 -->
+                <p class="font-lato font-light text-xs tracking-[5px] uppercase text-white/75 mb-8">
+                    Since 1937
+                </p>
+
+                <!-- Main headline -->
+                <h1 class="font-playfair font-bold text-6xl md:text-7xl leading-tight drop-shadow-lg mb-6">
+                    Excellent coffee,<br />every day.
+                </h1>
+
+                <!-- Subheadline -->
+                <p class="font-lato font-light text-sm md:text-base text-white/80 max-w-xs leading-relaxed">
+                    From the shores of Lake Como, a wide selection of fine coffees, capable of conquering even the most
+                    refined palates.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="flex flex-col justify-center items-center gap-[30px] px-[20px] py-[72px]">
+
+        <img src="Assets\Prodotti_Profilatore_del_gusto.svg" class="h-[78px] w-[128px]" alt="">
+
+        <p class="text-[18px] font-bold ">Taste Profiler </p>
+
+        <p class="text-[33px] max-w-[670px] text-center tracking-[-0.75px] leading-[47px]">Not sure which coffee to
+            choose? Find the perfect one for you with a few simple questions. </p>
+
+        <button class="px-[16px] py-[10px] bg-[#503629] rounded-full text-white">Take the test</button>
+
+    </section>
+
+
+    <section class="gap-[20px] py-[60px]">
+
+        <div class="flex items-center gap-[10px] px-[20px]">
+            <div class="h-[30px] w-[30px] rounded-full bg-[#503629]"></div>
+            <p class="text-[39px] font-normal text-[#503629] ">
+                Bestsellers
+            </p>
+        </div>
+
+
+        <div class="flex ">
+
+
+            <div class=" flex flex-col border border-[0.5px] border-black/90 justify-center items-center">
+
+                <div class="relative ">
+
+                    <div class="h-[594px] w-[475px] bg-cover bg-center bg-no-repeat">
+                        <img src="Assets\Caffe_Milani_Capsule_Kit_Degustazione.webp" alt=""
+                            class="h-full w-full object-cover">
+                    </div>
+                    <p class="bg-[#503629] p-[5px] text-[white] absolute top-[30px] left-[30px] ">Not available</p>
+
+                </div>
+
+                <div class="flex flex-col justify-center items-center py-[24px]">
+                    <p class="">Tasting kit</p>
+                    <p class="">€41.10</p>
+                </div>
+
+            </div>
+
+
+            <div class=" flex flex-col border border-[0.5px] border-black/90 justify-center items-center">
+
+                <div class="relative ">
+
+                    <div class="h-[594px] w-[475px] bg-cover bg-center bg-no-repeat">
+                        <img src="Assets\Caffe_Milani_Capsule_12_Gran_Espresso.webp" alt=""
+                            class="h-full w-full object-cover">
+                    </div>
+                    <p class="bg-white px-[5px] py-[3px] text-[black] absolute top-[30px] left-[30px] ">Available by
+                        subscription</p>
+
+                </div>
+
+                <div class="flex flex-col justify-center items-center py-[24px]">
+                    <p class="">Gran Espresso</p>
+                    <p class="">€7.50</p>
+                </div>
+
+            </div>
+            <div class=" flex flex-col border border-[0.5px] border-black/90 justify-center items-center">
+
+                <div class="relative ">
+
+                    <div class="h-[594px] w-[475px] bg-cover bg-center bg-no-repeat">
+                        <img src="Assets\Caffe_Milani_Grani_200_Kit_Miscele.webp" alt=""
+                            class="h-full w-full object-cover">
+                    </div>
+                    <p class="bg-white px-[5px] py-[3px] text-[black] absolute top-[30px] left-[30px] ">Kit</p>
+
+                </div>
+
+                <div class="flex flex-col justify-center items-center py-[24px]">
+                    <p class="">Mixing kit</p>
+                    <p class="">€37.20</p>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class=" flex flex-col border border-[0.5px] border-black/90 justify-center items-center">
+
+                <div class="relative ">
+
+                    <div class="  h-[594px] w-[475px] bg-cover bg-center bg-no-repeat">
+                        <img src="Assets\Caffe_Milani_Grani_500_fine_Cafe.webp" alt=""
+                            class="h-full w-full object-cover">
+                    </div>
+                    <p class="bg-[#503629] p-[5px] text-[white] absolute top-[30px] left-[30px] ">Not available</p>
+
+                </div>
+
+                <div class="flex flex-col justify-center items-center py-[24px]">
+                    <p class="">Fine Café</p>
+                    <p class="">€17.80</p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <!-- Section-4  -->
+
+    <section class="gap-[20px] py-[60px]">
+
+        <!-- <div class="flex items-center gap-[10px] px-[20px]">
+            <div class="h-[30px] w-[30px] rounded-full bg-[#503629]"></div>
+            <p class="text-[39px] font-normal text-[#503629] ">
+                Bestsellers
+            </p>
+        </div> -->
+
+
+        <div class="flex ">
+
+
+            <!-- Section-5 -->
+
+
+            <div class=" flex flex-col  justify-center items-center">
+
+                <div class="relative ">
+
+                    <div class=" bg-cover bg-center bg-no-repeat">
+                        <img src="Assets/caffe-milani-caffe-in-grani_2.webp" alt=""
+                            class="h-[720px] w-[475px] object-cover">
+                    </div>
+
+                    <div class="flex flex-col justify-between py-[20px] absolute top-[30px] left-[30px] inset-0">
+                        <p class=" p-[5px] text-[white] text-left text-[53px] font-normal tracking-[-2px] ">Coffee Beans
+                        </p>
+
+                        <div class="flex flex-col justify-center items-start py-[24px] ">
+                            <p
+                                class=" bg-[#ffffff] rounded-full px-[45px] py-[15px] text-[18px] font-medium text-[#000000] ">
+                                Buy Coffee Beans</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class=" flex flex-col  justify-center items-center">
+
+                <div class="relative ">
+
+                    <div class="  bg-center bg-no-repeat">
+                        <img src="Assets/caffe-milani-capsule-compatibili-nespresso_2.webp" alt=""
+                            class="h-[720px] w-[475px] object-cover">
+                    </div>
+
+                    <div class="flex flex-col justify-between py-[20px] absolute top-[30px] left-[30px] inset-0">
+                        <p class=" p-[5px] text-[white] text-left text-[53px] font-normal tracking-[-2px] ">Nespresso®
+                            compatible capsules</p>
+
+                        <div class="flex flex-col justify-center items-start py-[24px] ">
+                            <p
+                                class=" bg-[#ffffff] rounded-full px-[45px] py-[15px] text-[18px] font-medium text-[#000000] ">
+                                Buy compatible capsules</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class=" flex flex-col  justify-center items-center">
+
+                <div class="relative ">
+
+                    <div class="  bg-center bg-no-repeat">
+                        <img src="Assets\caffe-milani-caffe-macinato_2.webp" alt=""
+                            class="h-[720px] w-[475px] object-cover">
+                    </div>
+
+
+                    <div class="flex flex-col justify-between py-[20px] absolute top-[30px] left-[30px] inset-0">
+                        <p class=" p-[5px] text-[white] text-left text-[53px] font-normal tracking-[-2px] ">Ground
+                            Coffee</p>
+
+                        <div class="flex flex-col justify-center items-start py-[24px] ">
+                            <p
+                                class=" bg-[#ffffff] rounded-full px-[45px] py-[15px] text-[18px] font-medium text-[#000000] ">
+                                Buy ground coffee</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class=" flex flex-col  justify-center items-center">
+
+                <div class="relative ">
+
+                    <div class="  bg-center bg-no-repeat">
+                        <img src="Assets\caffe-milani-caffe-in-cialde_2.webp" alt=""
+                            class="h-[720px] w-[475px] object-cover">
+                    </div>
+
+                    <div class="flex flex-col justify-between py-[20px] absolute top-[30px] left-[30px] inset-0">
+                        <p class=" p-[5px] text-[white] text-left text-[53px] font-normal tracking-[-2px] ">Coffee Pods
+                        </p>
+
+                        <div class="flex flex-col justify-center items-start py-[24px] ">
+                            <p
+                                class=" bg-[#ffffff] rounded-full px-[45px] py-[15px] text-[18px] font-medium text-[#000000] ">
+                                Buy Coffee Pods</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+    </section>
+
+    <!-- scetion-6 -->
+    <scetion>
+
+    </scetion>
+
+    <!-- section-7 -->
+
+
+    <section class=" flex gap-[30px] justify-center items-center py-[60px]">
+
+
+        <div class="flex flex-col justify-center items-start gap-[20px] px-[20px]">
+
+            <hr class="h-[1px] bg-amber-700 w-full ">
+
+            <img src="Icons/Coffee_Custom_Icon_14234de3-0750-4253-94bf-99e46c407bbc.svg" alt=""
+                class="h-[24px] w-[24px] ">
+
+            <h1 class="p-[5px] text-[black] text-center text-[22px] font-bold  tracking-[0px] ">
+                Accessories
+            </h1>
+
+            <p class="p-[5px] text-[black] text-left text-[16px] font-normal  tracking-[0px] ">
+                Objects designed to enhance coffee even in small everyday gestures.
+            </p>
+
+            <button
+                class=" rounded-full bg-[#503629] px-[40px] py-[14px] text-[14px] font-normal text-[#fff] uppercase">
+                Buy accessories
+            </button>
+        </div>
+
+
+        <div class="flex flex-col justify-center items-start gap-[20px] px-[20px]">
+
+            <hr class="h-[1px] bg-amber-700 w-full ">
+
+            <img src="Icons/vecteezy_gift-box-icon-design-vector_23684601.jpg" alt="" class="h-[24px] w-[24px] ">
+
+            <h1 class="p-[5px] text-[black] text-center text-[22px] font-bold  tracking-[0px] ">
+                Accessories
+            </h1>
+
+            <p class="p-[5px] text-[black] text-left text-[16px] font-normal  tracking-[0px] ">
+                Objects designed to enhance coffee even in small everyday gestures.
+            </p>
+
+            <button
+                class=" rounded-full bg-[#503629] px-[40px] py-[14px] text-[14px] font-normal text-[#fff] uppercase">
+                Buy accessories
+            </button>
+        </div>
+
+
+        <div class="flex flex-col justify-center items-start gap-[20px] px-[20px]">
+
+            <hr class="h-[1px] bg-amber-700 w-full ">
+
+            <img src="Icons/Coffee_Custom_Icon_14234de3-0750-4253-94bf-99e46c407bbc.svg" alt=""
+                class="h-[24px] w-[24px] ">
+
+            <h1 class="p-[5px] text-[black] text-center text-[22px] font-bold  tracking-[0px] ">
+                Accessories
+            </h1>
+
+            <p class="p-[5px] text-[black] text-left text-[16px] font-normal  tracking-[0px] ">
+                Objects designed to enhance coffee even in small everyday gestures.
+            </p>
+
+            <button
+                class=" rounded-full bg-[#503629] px-[40px] py-[14px] text-[14px] font-normal text-[#fff] uppercase">
+                Buy accessories
+            </button>
+        </div>
+
+
+    </section>
+
+
+    <!-- Section-8 -->
+
+    <div class=" flex flex-col justify-center items-center relative ">
+
+        <div class="z-20 absolute flex flex-col justify-center items-center w-[860px] gap-[30px] ">
+
+            <p class="p-[5px] text-[white] text-center text-[16px] font-normal  tracking-[-1.5px]">
+                Caffè Milani World
+            </p>
+
+            <h1 class="p-[5px] text-[white] text-center text-[73px] leading-[100px] font-medium  tracking-[-2px]">
+                Each coffee speaks to our commitment to a more sustainable future.
+            </h1>
+
+            <button
+                class="bg-[#ffffff00] rounded-full border border-white px-[40px] py-[14px] text-[14px] font-normal text-[#fff] uppercase">
+                Find out more
+            </button>
+
+        </div>
+
+        <div style="background-image:url('Assets/caffe-milani-origine-selezione-chicchi.webp')"
+            class="h-[558px] w-full bg-cover bg-center">
+
+            <div class="absolute inset-0 bg-black/70 z-1"></div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Section-9  -->
+
+    <div class=" flex flex-col justify-center items-center relative ">
+
+        <div class="z-20 absolute flex flex-col justify-center items-center w-[860px] gap-[30px] ">
+
+            <p class="p-[5px] text-[white] text-center text-[16px] font-normal  tracking-[-1.5px]">
+                A place to live, not just to visit
+            </p>
+
+            <h1 class="p-[5px] text-[white] text-center text-[73px] leading-[100px] font-medium  tracking-[-2px]">
+                Caffè Milani Exhibition
+            </h1>
+
+            <p class="p-[5px] text-[white] text-center text-[16px] font-normal  tracking-[-1px] max-w-[558px]">
+                An experiential space open to the public, designed to showcase coffee in all its forms. Here you can
+                explore, learn, and participate in guided tastings and immersive experiences, exploring culture,
+                flavors, and passion.
+            </p>
+
+            <div class="flex gap-[20px]">
+                <button
+                    class="bg-[#ffffff] rounded-full px-[40px] py-[14px] text-[14px] font-medium text-[#000000] uppercase">
+                    Discover the exhibition
+                </button>
+                <button
+                    class="bg-[#ffffff] rounded-full px-[40px] py-[14px] text-[14px] font-medium text-[#000000] uppercase">
+                    Join an experience
+                </button>
+            </div>
+
+        </div>
+
+        <div style="background-image:url('Assets/caffe-milani-esposizione-lipomo-como.webp')"
+            class="h-[558px] w-full bg-cover bg-center">
+
+            <div class="absolute inset-0 bg-black/70 z-1"></div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Section-10 -->
+
+    <div class=" flex flex-col justify-center items-center relative ">
+
+        <div class="z-20 absolute flex flex-col justify-center items-center w-[860px] gap-[30px] ">
+
+
+            <h1 class="p-[5px] text-[white] text-center text-[73px] leading-[100px] font-medium  tracking-[1.5px]">
+                Coffee professionals
+            </h1>
+
+            <p class="p-[5px] text-[white] text-center text-[16px] font-normal  tracking-[-1px] max-w-[558px]">
+                Solutions designed for those who make espresso their profession. Consistent quality, dedicated formats,
+                select blends: our coffee is also designed for bars, restaurants, and cafes that want to stand out.
+            </p>
+            <button
+                class="bg-[#ffffff00] rounded-full border border-white px-[40px] py-[14px] text-[14px] font-normal text-[#fff] uppercase">
+                Find out more
+            </button>
+
+        </div>
+
+        <div style="background-image:url('Assets/caffe-milani-bar-professionisti.webp')"
+            class="h-[558px] w-full bg-cover bg-center">
+
+            <div class="absolute inset-0 bg-black/70 z-1"></div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
 </body>
 
 </html>
