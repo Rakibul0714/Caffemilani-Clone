@@ -337,6 +337,9 @@
   .max-w-\[670px\] {
     max-width: 670px;
   }
+  .max-w-\[700px\] {
+    max-width: 700px;
+  }
   .max-w-xs {
     max-width: var(--container-xs);
   }
@@ -386,6 +389,9 @@
   }
   .gap-\[30px\] {
     gap: 30px;
+  }
+  .gap-\[60px\] {
+    gap: 60px;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -458,35 +464,29 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(\"Assets\/caffe-milani-origine-selezione-chicchi\.webp\"\)\] {
-    background-image: url("Assets/caffe-milani-origine-selezione-chicchi.webp");
+  .bg-\[url\(\'\/Caffe_Milani0400_717a6886-0d7c-4e53-9654-6d9d1667cfe3\.webp\'\)\] {
+    background-image: url('/Caffe_Milani0400_717a6886-0d7c-4e53-9654-6d9d1667cfe3.webp');
   }
-  .bg-\[url\(\'\/Assets\/caffe-milani-origine-selezione-chicchi\.webp\'\)\] {
-    background-image: url('/Assets/caffe-milani-origine-selezione-chicchi.webp');
+  .bg-\[url\(\'A\/Caffe_Milani0400_717a6886-0d7c-4e53-9654-6d9d1667cfe3\.webp\'\)\] {
+    background-image: url('A/Caffe_Milani0400_717a6886-0d7c-4e53-9654-6d9d1667cfe3.webp');
   }
-  .bg-\[url\(\'\/caffe-milani-esposizione-lipomo-como\.webp\'\)\] {
-    background-image: url('/caffe-milani-esposizione-lipomo-como.webp');
+  .bg-\[url\(\'Assets\/Caffe_Milani0400_717a6886-0d7c-4e53-9654-6d9d1667cfe3\.webp\'\)\] {
+    background-image: url('Assets/Caffe_Milani0400_717a6886-0d7c-4e53-9654-6d9d1667cfe3.webp');
   }
-  .bg-\[url\(\'Assets\/caffe-milani-esposizione-lipomo-como\.webp\'\)\] {
-    background-image: url('Assets/caffe-milani-esposizione-lipomo-como.webp');
+  .bg-\[url\(\'Assets\\Caffe_Milani0400_717a6886-0d7c-4e53-9654-6d9d1667cfe3\.webp\'\)\] {
+    background-image: url('Assets\Caffe_Milani0400_717a6886-0d7c-4e53-9654-6d9d1667cfe3.webp');
   }
-  .bg-\[url\(\'Assets\/caffe-milani-origine-selezione-chicchi\.webp\'\)\] {
-    background-image: url('Assets/caffe-milani-origine-selezione-chicchi.webp');
+  .bg-\[url\(\'Images\/Caffe_Milani0400_717a6886-0d7c-4e53-9654-6d9d1667cfe3\.webp\'\)\] {
+    background-image: url('Images/Caffe_Milani0400_717a6886-0d7c-4e53-9654-6d9d1667cfe3.webp');
   }
-  .bg-\[url\(\'Assets\\caffe-milani-origine-selezione-chicchi\.webp\'\)\] {
-    background-image: url('Assets\caffe-milani-origine-selezione-chicchi.webp');
+  .bg-\[url\(\'Images\/Caffe_Milani_TUTTOFOOD_1_6e20b45d-53ea-43c7-b7e6-8939494baaa7\.webp\'\)\] {
+    background-image: url('Images/Caffe_Milani_TUTTOFOOD_1_6e20b45d-53ea-43c7-b7e6-8939494baaa7.webp');
   }
-  .bg-\[url\(\'Images\/caffe-milani-bar-professionisti\.webp\'\)\] {
-    background-image: url('Images/caffe-milani-bar-professionisti.webp');
+  .bg-\[url\(\'Images\/IMG_1923_6ec0adcc-bfb2-4992-a6a8-2f1664cb89d6\.webp\'\)\] {
+    background-image: url('Images/IMG_1923_6ec0adcc-bfb2-4992-a6a8-2f1664cb89d6.webp');
   }
-  .bg-\[url\(\'Images\/caffe-milani-esposizione-lipomo-como\.webp\'\)\] {
-    background-image: url('Images/caffe-milani-esposizione-lipomo-como.webp');
-  }
-  .bg-\[url\(\'Images\/caffe-milani-origine-selezione-chicchi\.webp\'\)\] {
-    background-image: url('Images/caffe-milani-origine-selezione-chicchi.webp');
-  }
-  .bg-\[url\(\'\\Assets\/caffe-milani-origine-selezione-chicchi\.webp\'\)\] {
-    background-image: url('\Assets/caffe-milani-origine-selezione-chicchi.webp');
+  .bg-\[url\(\'Images\/TUTTOFOOD_Tossini_e_Caffe_Milani_63ce3ada-7757-4f09-9a88-29209615fa83\.webp\'\)\] {
+    background-image: url('Images/TUTTOFOOD_Tossini_e_Caffe_Milani_63ce3ada-7757-4f09-9a88-29209615fa83.webp');
   }
   .bg-cover {
     background-size: cover;
@@ -521,6 +521,9 @@
   .px-\[20px\] {
     padding-inline: 20px;
   }
+  .px-\[30px\] {
+    padding-inline: 30px;
+  }
   .px-\[40px\] {
     padding-inline: 40px;
   }
@@ -547,6 +550,12 @@
   }
   .py-\[24px\] {
     padding-block: 24px;
+  }
+  .py-\[30px\] {
+    padding-block: 30px;
+  }
+  .py-\[50px\] {
+    padding-block: 50px;
   }
   .py-\[60px\] {
     padding-block: 60px;
@@ -595,6 +604,9 @@
   }
   .text-\[39px\] {
     font-size: 39px;
+  }
+  .text-\[50px\] {
+    font-size: 50px;
   }
   .text-\[53px\] {
     font-size: 53px;
