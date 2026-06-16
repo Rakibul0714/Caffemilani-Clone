@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- ── NAVBAR ─────────────────────────────────────────── -->
+    <section>
+        <!-- Announcement bar -->
+        <div class="flex items-center justify-center gap-4 py-2 px-4 bg-white border-b border-gray-100 text-center">
+            <button class="text-gray-400 text-sm">&#8592;</button>
+            <p class="text-[13px] md:text-[15px] text-gray-700">Free shipping in Italy for orders over €40</p>
+            <button class="text-gray-400 text-sm">&#8594;</button>
+        </div>
+
+        <!-- Menu bar -->
+        <div class="relative flex items-center h-[70px] md:h-[87px] bg-[#f2ede9] px-4 md:px-8">
+
+            <!-- Logo -->
+            <div class="h-[30px] w-[30px] md:h-[35px] md:w-[35px] flex-shrink-0">
+                <a href="index.html"><img
+                        src="https://caffemilani.it/cdn/shop/files/Pittogramma_-_CaffeMilani.svg?v=1767875306&width=80"
+                        class="w-full h-full" alt="Logo"></a>
+            </div>
+
+            <!-- Desktop Center Nav -->
+            <div class="hidden lg:flex absolute left-1/2 -translate-x-1/2">
+                <nav class="flex items-center gap-5 xl:gap-6 text-sm text-[#3b1f10]">
+                    <a href="coffee-menu.html"
+                        class=" relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100">Products</a>
+                    <a href="#"
+                        class="relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100">CafeMilaniWorld</a>
+                    <a href="exhibition.html"
+                        class="relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100">Esposizione</a>
+                    <a href="#"
+                        class="relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100">Professionals</a>
+                    <a href="magazine.html"
+                        class="relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100">Magazine</a>
+                    <a href="#"
+                        class="relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100">Contacts</a>
+                </nav>
+            </div>
+
+            <!-- Right Section -->
+            <div class="ml-auto flex items-center gap-3 md:gap-4">
+                <select class="hidden md:block bg-transparent outline-none text-sm text-[#3b1f10]">
+                    <option>English</option>
+                    <option>Bangla</option>
+                </select>
+                <span class="hidden md:inline text-gray-400">|</span>
+                <div class="flex items-center gap-3 text-[#3b1f10]">
+                    <i class="fa-solid fa-user text-sm"></i>
+                    <i class="fa-solid fa-magnifying-glass text-sm"></i>
+                    <i class="fa-solid fa-cart-shopping text-sm"></i>
+                </div>
+                <!-- Mobile hamburger -->
+                <button class="lg:hidden ml-1 text-[#3b1f10]"
+                    onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu"
+            class="hidden lg:hidden bg-[#f2ede9] border-t border-[#e2dbd6] px-6 py-4 flex flex-col gap-4 text-sm text-[#3b1f10]">
+            <a href="coffee-menu.html" class="py-1 border-b border-[#e2dbd6]">Products</a>
+            <a href="#" class="py-1 border-b border-[#e2dbd6]">CafeMilaniWorld</a>
+            <a href="exhibition.html" class="py-1 border-b border-[#e2dbd6]">Esposizione</a>
+            <a href="#" class="py-1 border-b border-[#e2dbd6]">Professionals</a>
+            <a href="magazine.html" class="py-1 border-b border-[#e2dbd6]">Magazine</a>
+            <a href="#" class="py-1">Contacts</a>
+        </div>
+    </section>
+
+    <!-- Main Product Section -->
+    <main class="max-w-[1100px] mx-auto px-6 py-12 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
+            <!-- Product Image -->
+            <div class="flex items-center justify-center bg-[#ebe4db]/40 rounded-sm p-8 md:p-12 min-h-[400px] md:min-h-[520px]">
+                <img
+                    id="product-image"
+                    src="https://caffemilani.it/cdn/shop/files/Caffe_Milani_Grani_1000_Oro.png?v=1768468353&width=600"
+                    alt="ORO Grani Coffee Beans by Caffè Milani - 1000g red and gold package"
+                    class="max-h-[420px] md:max-h-[480px] w-auto object-contain drop-shadow-lg transition-transform duration-500 hover:scale-105"
+                >
+            </div>
+            <!-- Product Details -->
+            <div class="flex flex-col">
+                <!-- Subscription Badge -->
+                <p id="subscription-badge" class="text-[11px] font-medium tracking-[0.18em] uppercase text-[#8b7b6e] mb-3 border-b border-[#e0d6cc] pb-3 w-fit">
+                    Available by Subscription
+                </p>
+                <!-- Product Name -->
+                <h1 id="product-title" class="font-['Playfair_Display',Georgia,serif] text-[2.8rem] md:text-[3.2rem] font-medium text-[#3e2a1e] leading-tight mb-3 tracking-tight">
+                    ORO
+                </h1>
+                <!-- Price -->
+                <p id="product-price" class="text-xl md:text-2xl font-medium text-[#5c3d2e] mb-1.5">
+                    €18,00
+                </p>
+                <!-- Tax Info -->
+                <p id="tax-info" class="text-sm text-[#8b7b6e] mb-6">
+                    Tax included. <a href="#" class="underline underline-offset-2 hover:text-[#5c3d2e] transition-colors duration-200">Shipping calculated at checkout</a>
+                </p>
+                <!-- Product Meta -->
+                <div id="product-meta" class="mb-5 space-y-1">
+                    <p class="text-sm text-[#6b5b4e]">
+                        <span class="font-semibold text-[#3e2a1e]">Category:</span> Coffee Beans
+                    </p>
+                    <p class="text-sm text-[#6b5b4e]">
+                        <span class="font-semibold text-[#3e2a1e]">Format:</span> 1,000g pack
+                    </p>
+                </div>
+                <!-- Product Description -->
+                <p id="product-description" class="text-sm leading-relaxed text-[#6b5b4e] mb-8 max-w-[520px]">
+                    This blend, composed of the finest Arabica and Robusta coffees, has a smooth taste and intense aroma, releasing a fragrant creaminess in the cup. A perfect harmony, as Italian tradition dictates.
+                </p>
+                <!-- Add to Cart Row -->
+                <div id="add-to-cart-section" class="flex items-center gap-4 mb-4">
+                    <!-- Quantity Selector -->
+                    <div class="flex items-center border border-[#e0d6cc] rounded-full overflow-hidden shrink-0">
+                        <label for="qty-decrease" class="w-10 h-10 flex items-center justify-center text-[#8b7b6e] hover:text-[#3e2a1e] hover:bg-[#ebe4db]/60 transition-all duration-200 cursor-pointer text-lg select-none">
+                            −
+                        </label>
+                        <input
+                            id="qty-input"
+                            type="text"
+                            value="1"
+                            readonly
+                            class="w-8 text-center text-sm font-medium text-[#3e2a1e] bg-transparent border-none outline-none"
+                            aria-label="Quantity"
+                        >
+                        <label for="qty-increase" class="w-10 h-10 flex items-center justify-center text-[#8b7b6e] hover:text-[#3e2a1e] hover:bg-[#ebe4db]/60 transition-all duration-200 cursor-pointer text-lg select-none">
+                            +
+                        </label>
+                    </div>
+                    <!-- Add to Cart Button -->
+                    <button
+                        id="add-to-cart-btn"
+                        class="flex-1 h-11 bg-[#6b4c3b] text-white text-xs font-semibold tracking-[0.18em] uppercase rounded-full hover:bg-[#7d5a47] active:scale-[0.98] transition-all duration-200 cursor-pointer border-none"
+                    >
+                        Add to Cart
+                    </button>
+                </div>
+                <!-- Free Delivery Notice -->
+                <div id="free-delivery-notice" class="flex items-center gap-2.5 bg-[#ebe4db]/50 border border-[#e0d6cc] rounded-sm px-4 py-3 mt-1">
+                    <svg class="w-4 h-4 text-[#8b6f5e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                    <p class="text-xs text-[#6b5b4e] tracking-wide">
+                        Free delivery for orders over €40
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Expandable Details - Pure HTML details/summary -->
+        <details id="product-details-toggle" class="mt-12 group">
+            <summary class="flex justify-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span class="w-10 h-10 rounded-full border border-[#e0d6cc] flex items-center justify-center text-[#8b6f5e] hover:text-[#3e2a1e] hover:border-[#8b6f5e] transition-all duration-200">
+                    <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                </span>
+            </summary>
+            <div class="pt-8 pb-4 max-w-[700px] mx-auto">
+                <div class="border-t border-[#e0d6cc] pt-8 space-y-6">
+                    <div>
+                        <h2 class="font-['Playfair_Display',Georgia,serif] text-xl font-medium text-[#3e2a1e] mb-3">Tasting Notes</h2>
+                        <p class="text-sm leading-relaxed text-[#6b5b4e]">
+                            Rich and full-bodied with notes of dark chocolate, caramel, and toasted nuts. The Robusta component adds a pleasant crema and body, while the Arabica brings elegance and aromatic complexity.
+                        </p>
+                    </div>
+                    <div>
+                        <h2 class="font-['Playfair_Display',Georgia,serif] text-xl font-medium text-[#3e2a1e] mb-3">Recommended Brewing</h2>
+                        <p class="text-sm leading-relaxed text-[#6b5b4e]">
+                            Ideal for espresso machines. Grind to a fine consistency. Use 7-8g per single shot. Water temperature: 90-96°C. Extraction time: 25-30 seconds.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+    </main>
+    </section>
+    <section class="w-full bg-[#f2ede9] py-10 overflow-hidden">
+        <div class="flex items-center gap-4 px-4 md:px-8 mb-8 md:mb-12">
+            <div class="w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#5b3727] flex-shrink-0"></div>
+            <h2 class="text-[26px] md:text-[35px] leading-none font-normal text-[#5b3727] tracking-[-1px] md:tracking-[-2px]"
+                style="font-family:'Playfair Display',serif;">Related Products</h2>
+        </div>
+
+        <div class="max-w-[1400px] mx-auto px-4 md:px-6">
+            <!-- 1 col mobile, 2 cols tablet, 4 cols desktop -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+
+                <!-- Card 1 -->
+                <div class="flex flex-col items-center text-center">
+                    <div
+                        class="relative w-full border border-gray-200 min-h-[300px] sm:min-h-[400px] lg:min-h-[470px] flex items-center justify-center p-4 md:p-6">
+                        <span
+                            class="absolute top-3 left-3 text-[10px] md:text-[11px] uppercase border border-white bg-white px-2 py-[2px] tracking-wide"
+                            style="font-family:'Jost',sans-serif;">Kit</span>
+                        <span
+                            class="absolute top-9 left-3 bg-[#4f463f] text-white text-[10px] md:text-[11px] uppercase px-2 md:px-3 py-1 tracking-wide"
+                            style="font-family:'Jost',sans-serif;">Sold Out</span>
+                        <img src="https://caffemilani.it/cdn/shop/files/Caffe_Milani_Capsule_20_Brasile.png?v=1768485776&width=400"
+                            class="w-fit h-fit max-h-[280px] object-contain" alt="Tasting kit" />
+                    </div>
+                    <h3 class="mt-4 md:mt-6 text-[22px] md:text-[28px] font-light tracking-tight text-[#4b4b4b]"
+                        style="font-family:'Playfair Display',serif;">Tasting kit</h3>
+                    <p class="mt-2 text-[20px] md:text-[26px] text-[#6a6a6a]" style="font-family:'Jost',sans-serif;">
+                        €41,10</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flex flex-col items-center text-center">
+                    <div
+                        class="relative w-full border border-gray-200 min-h-[300px] sm:min-h-[400px] lg:min-h-[470px] flex items-center justify-center p-4 md:p-6">
+                        <span
+                            class="absolute top-3 left-3 text-[10px] md:text-[11px] uppercase border border-gray-400 px-2 py-[2px] tracking-wide"
+                            style="font-family:'Jost',sans-serif;">Available by subscription</span>
+                        <img src="https://caffemilani.it/cdn/shop/files/Caffe_Milani_Capsule_12_Action.png?v=1768476147&width=400"
+                            class="w-[180px] md:w-[250px] h-[260px] md:h-[360px] object-contain" alt="Gran Espresso" />
+                    </div>
+                    <h3 class="mt-4 md:mt-6 text-[22px] md:text-[28px] font-light tracking-tight text-[#4b4b4b]"
+                        style="font-family:'Playfair Display',serif;">Gran Espresso</h3>
+                    <p class="mt-2 text-[20px] md:text-[26px] text-[#6a6a6a]" style="font-family:'Jost',sans-serif;">
+                        €7,50</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flex flex-col items-center text-center">
+                    <div
+                        class="relative w-full border border-gray-200 min-h-[300px] sm:min-h-[400px] lg:min-h-[470px] flex items-center justify-center p-4 md:p-6">
+                        <span
+                            class="absolute top-3 left-3 text-[10px] md:text-[11px] uppercase border border-gray-400 px-2 py-[2px] tracking-wide"
+                            style="font-family:'Jost',sans-serif;">Kit</span>
+                        <img src="https://caffemilani.it/cdn/shop/files/Caffe_Milani_Capsule_20_Etiopia.png?v=1768486443&width=400"
+                            class="w-[180px] md:w-[250px] h-[260px] md:h-[360px] object-contain" alt="Mixing kit" />
+                    </div>
+                    <h3 class="mt-4 md:mt-6 text-[22px] md:text-[28px] font-light tracking-tight text-[#4b4b4b]"
+                        style="font-family:'Playfair Display',serif;">Mixing kit</h3>
+                    <p class="mt-2 text-[20px] md:text-[26px] text-[#6a6a6a]" style="font-family:'Jost',sans-serif;">
+                        €37,20</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="flex flex-col items-center text-center">
+                    <div
+                        class="relative w-full border border-gray-200 min-h-[300px] sm:min-h-[400px] lg:min-h-[470px] flex items-center justify-center p-4 md:p-6">
+                        <img src="https://caffemilani.it/cdn/shop/files/Caffe_Milani_Capsule_20_Cuoril.png?v=1769420337&width=400"
+                            class="w-[190px] md:w-[260px] h-[270px] md:h-[380px] object-contain" alt="Fine Café" />
+                    </div>
+                    <h3 class="mt-4 md:mt-6 text-[22px] md:text-[28px] font-light tracking-tight text-[#4b4b4b]"
+                        style="font-family:'Playfair Display',serif;">Fine Café</h3>
+                    <p class="mt-2 text-[20px] md:text-[26px] text-[#6a6a6a]" style="font-family:'Jost',sans-serif;">
+                        €17,80</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#ede8e2] font-body">
+
+        <!-- FAQ Section -->
+        <div class="max-w-5xl mx-auto px-10 py-20 flex gap-20 items-start">
+
+            <!-- LEFT: Label + Heading + Description + Button -->
+            <div class="w-[45%] flex flex-col gap-5 pt-2">
+
+                <!-- Dot + FAQ label -->
+                <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#3e2010] inline-block"></span>
+                    <span class="text-sm font-body text-[#3e2010] tracking-wide">FAQ</span>
+                </div>
+
+                <!-- Heading -->
+                <h2 class="font-heading text-4xl font-normal text-gray-900 leading-snug">
+                    Frequently Asked Questions
+                </h2>
+
+                <!-- Description -->
+                <p class="text-sm font-body text-gray-700 leading-relaxed">
+                    Have more questions? Visit our FAQ page for answers about shipping, payments,
+                    subscriptions, and more.
+                </p>
+
+                <!-- Button -->
+                <div class="mt-2">
+                    <a href="#"
+                        class="inline-block border border-gray-800 rounded-full px-7 py-3 text-xs font-body font-medium tracking-[0.18em] uppercase text-gray-900 hover:bg-gray-900 hover:text-white transition-colors duration-200">
+                        Visit the Page
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- RIGHT: Accordion (CSS-only using details/summary) -->
+            <div class="flex-1 flex flex-col border-t border-gray-300">
+
+                <!-- Question 1 -->
+                <details class="group border-b border-gray-300 bg-white">
+                    <summary class="flex items-center justify-between py-5 cursor-pointer list-none">
+                        <span class="text-sm font-body text-gray-800 p-4">Are the capsules compatible with all
+                            Nespresso® machines?</span>
+                        <svg class="w-4 h-4 text-gray-600 shrink-0 transition-transform duration-200 group-open:rotate-180"
+                            fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="pb-5 text-sm font-body text-gray-600 leading-relaxed pr-6">
+                        Yes, our capsules are compatible with all standard Nespresso® Original Line machines. Please
+                        check your machine model before purchasing to ensure compatibility.
+                    </div>
+                </details>
+
+                <!-- Question 2 -->
+                <details class="group border-b border-gray-300 bg-white mt-3">
+                    <summary class="flex items-center justify-between py-5 cursor-pointer list-none">
+                        <span class="text-sm font-body text-gray-800 p-4">How is the product best preserved?</span>
+                        <svg class="w-4 h-4 text-gray-600 shrink-0 transition-transform duration-200 group-open:rotate-180"
+                            fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="pb-5 text-sm font-body text-gray-600 leading-relaxed pr-6">
+                        Store in a cool, dry place away from heat sources and direct sunlight. Once opened, consume
+                        within the timeframe indicated on the packaging for best flavor.
+                    </div>
+                </details>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="w-full bg-[#503629]">
+        <div
+            class="max-w-screen-xl mx-auto px-4 md:px-10 py-10 md:py-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-10">
+
+            <div class="col-span-2 md:col-span-3 lg:col-span-1 flex flex-col gap-3">
+                <p class="font-semibold text-white text-sm tracking-wide" style="font-family:'Jost',sans-serif;">MILANI
+                    SPA
+                </p>
+                <div class="font-light text-white text-sm leading-relaxed opacity-90 flex flex-col gap-1 mt-1"
+                    style="font-family:'Jost',sans-serif;">
+                    <p>Via Provinciale, 811 – 22030 Lipomo (CO)</p>
+                    <p>VAT Number / Fiscal Code: 00809790132</p>
+                    <p>Rea: CO-167127</p>
+                    <p>Share capital: €2,500,000.00</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <p class="font-light text-white text-sm tracking-widest lowercase opacity-70"
+                    style="font-family:'Jost',sans-serif;">explore</p>
+                <nav class="flex flex-col gap-2 md:gap-3 mt-1">
+                    <a href="#" class="font-light text-white text-sm hover:opacity-70 transition-opacity duration-200"
+                        style="font-family:'Jost',sans-serif;">Products</a>
+                    <a href="#" class="font-light text-white text-sm hover:opacity-70 transition-opacity duration-200"
+                        style="font-family:'Jost',sans-serif;">Scopri il tuo caffè ideale</a>
+                    <a href="#" class="font-light text-white text-sm hover:opacity-70 transition-opacity duration-200"
+                        style="font-family:'Jost',sans-serif;">Caffé Milani World</a>
+                    <a href="#" class="font-light text-white text-sm hover:opacity-70 transition-opacity duration-200"
+                        style="font-family:'Jost',sans-serif;">Exposure</a>
+                    <a href="#" class="font-light text-white text-sm hover:opacity-70 transition-opacity duration-200"
+                        style="font-family:'Jost',sans-serif;">Are you a professional?</a>
+                    <a href="#" class="font-light text-white text-sm hover:opacity-70 transition-opacity duration-200"
+                        style="font-family:'Jost',sans-serif;">Magazine</a>
+                    <a href="#" class="font-light text-white text-sm hover:opacity-70 transition-opacity duration-200"
+                        style="font-family:'Jost',sans-serif;">Contacts</a>
+                </nav>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <p class="font-light text-white text-sm tracking-widest lowercase opacity-70 leading-snug"
+                    style="font-family:'Jost',sans-serif;">customer support</p>
+                <nav class="flex flex-col gap-2 md:gap-3 mt-1">
+                    <a href="#" class="font-light text-white text-sm hover:opacity-70 transition-opacity duration-200"
+                        style="font-family:'Jost',sans-serif;">Customer account</a>
+                    <a href="#" class="font-light text-white text-sm hover:opacity-70 transition-opacity duration-200"
+                        style="font-family:'Jost',sans-serif;">Shipping Information</a>
+                    <a href="#" class="font-light text-white text-sm hover:opacity-70 transition-opacity duration-200"
+                        style="font-family:'Jost',sans-serif;">Returns and Refunds Policy</a>
+                    <a href="#" class="font-light text-white text-sm hover:opacity-70 transition-opacity duration-200"
+                        style="font-family:'Jost',sans-serif;">FAQ</a>
+                    <a href="#" class="font-light text-white text-sm hover:opacity-70 transition-opacity duration-200"
+                        style="font-family:'Jost',sans-serif;">Contacts</a>
+                </nav>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <p class="font-light text-white text-sm tracking-widest lowercase opacity-70 leading-snug"
+                    style="font-family:'Jost',sans-serif;">legal notes</p>
+                <nav class="flex flex-col gap-2 md:gap-3 mt-1">
+                    <a href="#" class="font-light text-white text-sm hover:opacity-70 transition-opacity duration-200"
+                        style="font-family:'Jost',sans-serif;">Terms and conditions</a>
+                    <a href="#" class="font-light text-white text-sm hover:opacity-70 transition-opacity duration-200"
+                        style="font-family:'Jost',sans-serif;">Privacy policy</a>
+                    <a href="#" class="font-light text-white text-sm hover:opacity-70 transition-opacity duration-200"
+                        style="font-family:'Jost',sans-serif;">Accessibility</a>
+                </nav>
+            </div>
+
+            <div class="col-span-2 md:col-span-1 flex items-start justify-center md:justify-center pt-2">
+                <div class="w-20 h-20 md:w-28 md:h-28 rotate-45 border-2 border-white flex items-center justify-center">
+                    <div class="-rotate-45 flex flex-col items-center justify-center text-center">
+                        <img src="https://caffemilani.it/cdn/shop/files/Logo_Bianco_-_CaffeMilani.svg?v=1767878770&width=150"
+                            alt="Logo" class="w-12 md:w-16">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="border-t border-white border-opacity-20"></div>
+
+        <div
+            class="max-w-screen-xl mx-auto px-4 md:px-10 py-5 md:py-6 flex flex-col md:flex-row items-center justify-between flex-wrap gap-4 md:gap-4">
+
+            <div class="flex items-center gap-3 md:gap-4">
+                <button
+                    class="font-light text-white text-xs md:text-sm flex items-center gap-1 hover:opacity-70 transition-opacity"
+                    style="font-family:'Jost',sans-serif;">
+                    Italy (EUR €) <svg class="w-3 h-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <button
+                    class="font-light text-white text-xs md:text-sm flex items-center gap-1 hover:opacity-70 transition-opacity"
+                    style="font-family:'Jost',sans-serif;">
+                    English <svg class="w-3 h-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="flex flex-col items-center gap-2 md:gap-3">
+                <p class="font-light text-white text-xs opacity-80" style="font-family:'Jost',sans-serif;">© 2026 -
+                    Caffé
+                    Milani | Designed by Memesi</p>
+                <div class="flex items-center flex-wrap justify-center gap-1.5 md:gap-2">
+                    <div class="bg-blue-700 rounded-sm px-1.5 py-1 flex items-center justify-center"><span
+                            class="font-bold text-white text-[10px] tracking-tight"
+                            style="font-family:'Jost',sans-serif;">AMEX</span></div>
+                    <div class="bg-black rounded-sm px-1.5 py-1"><span class="font-semibold text-white text-[10px]"
+                            style="font-family:'Jost',sans-serif;"> Pay</span></div>
+                    <div class="bg-white rounded-sm px-1.5 py-1"><span class="font-bold text-[10px]"
+                            style="font-family:'Jost',sans-serif;"><span class="text-blue-600">G</span><span
+                                class="text-red-500">o</span><span class="text-yellow-500">o</span><span
+                                class="text-blue-600">g</span><span class="text-green-500">l</span><span
+                                class="text-red-500">e</span>
+                            <span class="text-neutral-700">Pay</span></span></div>
+                    <div class="bg-white rounded-sm px-1.5 py-1 flex items-center">
+                        <div class="flex">
+                            <div class="w-3.5 h-3.5 rounded-full bg-red-500 opacity-90"></div>
+                            <div class="w-3.5 h-3.5 rounded-full bg-blue-700 opacity-90 -ml-1.5"></div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-sm px-1.5 py-1 flex items-center">
+                        <div class="flex">
+                            <div class="w-3.5 h-3.5 rounded-full bg-red-600"></div>
+                            <div class="w-3.5 h-3.5 rounded-full bg-orange-400 -ml-1.5 opacity-90"></div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-sm px-1.5 py-1"><span class="font-bold text-[10px] text-blue-800"
+                            style="font-family:'Jost',sans-serif;">Pay<span class="text-blue-400">Pal</span></span>
+                    </div>
+                    <div class="bg-indigo-600 rounded-sm px-1.5 py-1"><span class="font-bold text-white text-[10px]"
+                            style="font-family:'Jost',sans-serif;">Shop</span></div>
+                    <div class="bg-red-700 rounded-sm px-1.5 py-1"><span class="font-bold text-white text-[10px]"
+                            style="font-family:'Jost',sans-serif;">UP</span></div>
+                    <div class="bg-blue-800 rounded-sm px-1.5 py-1"><span
+                            class="font-bold text-white text-[10px] italic tracking-wide"
+                            style="font-family:'Jost',sans-serif;">VISA</span></div>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-3 md:gap-5">
+                <a href="#" class="text-white opacity-80 hover:opacity-100 transition-opacity duration-200">
+                    <svg class="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                    </svg>
+                </a>
+                <a href="#" class="text-white opacity-80 hover:opacity-100 transition-opacity duration-200">
+                    <svg class="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+                <a href="#" class="text-white opacity-80 hover:opacity-100 transition-opacity duration-200">
+                    <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" stroke-width="1.8"
+                        viewBox="0 0 24 24">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                        <circle cx="12" cy="12" r="4" />
+                        <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+                    </svg>
+                </a>
+                <a href="#" class="text-white opacity-80 hover:opacity-100 transition-opacity duration-200">
+                    <svg class="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                    </svg>
+                </a>
+                <a href="#" class="text-white opacity-80 hover:opacity-100 transition-opacity duration-200">
+                    <svg class="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zm2-6a2 2 0 110 4 2 2 0 010-4z" />
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

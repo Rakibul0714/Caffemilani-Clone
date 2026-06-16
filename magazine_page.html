@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caffè Milani – Magazine</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body class="overflow-x-hidden">
+  <!-- ===================== TOP BAR & NAVIGATION ===================== -->
+  <header>
+    <!-- Promo banner -->
+    <div class="border-b border-gray-100 bg-white py-2 px-4 text-center flex justify-center items-center gap-4">
+      <span class="text-sm text-gray-400">&#8592;</span>
+      <span class="text-gray-700 text-[13px] md:text-[15px]">Free shipping in Italy for orders over €40</span>
+      <span class="text-sm text-gray-400">&#8594;</span>
+    </div>
+    <!-- Primary navigation -->
+    <div class="bg-[#f2ede9] h-[70px] md:h-[87px] px-4 md:px-8 flex items-center relative">
+      <!-- Brand mark -->
+      <a href="index.html" class="block w-[30px] h-[30px] md:w-[35px] md:h-[35px] flex-shrink-0">
+        <img alt="Caffè Milani"
+          src="https://caffemilani.it/cdn/shop/files/Pittogramma_-_CaffeMilani.svg?v=1767875306&width=80"
+          class="h-full w-full" />
+      </a>
+      <!-- Desktop links (centered) -->
+      <nav class="hidden lg:flex items-center gap-5 xl:gap-6 text-sm text-[#3b1f10] absolute left-1/2 -translate-x-1/2">
+        <a href="coffee-menu.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-black after:origin-left after:scale-x-0 after:transition-transform after:duration-500 hover:after:scale-x-100 inline-block">Products</a>
+        <a href="#"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-black after:origin-left after:scale-x-0 after:transition-transform after:duration-500 hover:after:scale-x-100 inline-block">CafeMilaniWorld</a>
+        <a href="exhibition.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-black after:origin-left after:scale-x-0 after:transition-transform after:duration-500 hover:after:scale-x-100 inline-block">Esposizione</a>
+        <a href="#"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-black after:origin-left after:scale-x-0 after:transition-transform after:duration-500 hover:after:scale-x-100 inline-block">Professionals</a>
+        <a href="magazine.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-black after:origin-left after:scale-x-0 after:transition-transform after:duration-500 hover:after:scale-x-100 inline-block">Magazine</a>
+        <a href="#"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-black after:origin-left after:scale-x-0 after:transition-transform after:duration-500 hover:after:scale-x-100 inline-block">Contacts</a>
+      </nav>
+      <!-- Utilities & mobile toggle -->
+      <div class="flex items-center gap-3 md:gap-4 ml-auto">
+        <select class="hidden md:block text-sm text-[#3b1f10] bg-transparent outline-none">
+          <option>English</option>
+          <option>Bangla</option>
+        </select>
+        <span class="hidden md:inline text-gray-400">|</span>
+        <div class="text-[#3b1f10] flex items-center gap-3">
+          <i class="fa-solid fa-user text-sm"></i>
+          <i class="fa-solid fa-magnifying-glass text-sm"></i>
+          <i class="fa-solid fa-cart-shopping text-sm"></i>
+        </div>
+        <button class="lg:hidden text-[#3b1f10] ml-1"
+          onclick="document.getElementById('navDrawer').classList.toggle('hidden')">
+          <i class="fa-solid fa-bars text-lg"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Collapsible mobile nav -->
+    <nav id="navDrawer"
+      class="hidden lg:hidden flex-col gap-4 bg-[#f2ede9] border-t border-[#e2dbd6] px-6 py-4 text-sm text-[#3b1f10] flex">
+      <a href="coffee-menu.html" class="border-b border-[#e2dbd6] py-1">Products</a>
+      <a href="#" class="border-b border-[#e2dbd6] py-1">CafeMilaniWorld</a>
+      <a href="exhibition.html" class="border-b border-[#e2dbd6] py-1">Esposizione</a>
+      <a href="#" class="border-b border-[#e2dbd6] py-1">Professionals</a>
+      <a href="magazine.html" class="border-b border-[#e2dbd6] py-1">Magazine</a>
+      <a href="#" class="py-1">Contacts</a>
+    </nav>
+  </header>
+  <!-- ===================== HERO / PAGE TITLE ===================== -->
+  <section class="bg-[#ece8e1] pt-16 pb-0 px-8">
+    <div class="text-center mb-6">
+      <h1 class="text-[#3b2214] font-serif text-6xl md:text-7xl tracking-wide font-normal mb-8">Magazine</h1>
+      <p class="text-base text-[#4a3728] leading-relaxed">
+        Stories, projects, events, and news about us. An ongoing narrative about coffee,<br />
+        our work, and what we care about.
+      </p>
+    </div>
+    <!-- Category filters -->
+    <nav class="border-t border-[#c4b8aa] mt-12">
+      <ul class="flex flex-wrap gap-x-8 gap-y-3 items-center pt-5 text-sm text-[#3b2214]">
+        <li><a href="#" class="underline decoration-[#3b2214] underline-offset-4">All posts</a></li>
+        <li><a href="#" class="hover:underline hover:underline-offset-4">Caffé Milani World</a></li>
+        <li><a href="#" class="hover:underline hover:underline-offset-4">Eventi</a></li>
+        <li><a href="#" class="hover:underline hover:underline-offset-4">Press</a></li>
+        <li><a href="#" class="hover:underline hover:underline-offset-4">Prodotti</a></li>
+        <li><a href="#" class="hover:underline hover:underline-offset-4">Professionisti</a></li>
+        <li><a href="#" class="hover:underline hover:underline-offset-4">Storie di caffè</a></li>
+      </ul>
+    </nav>
+  </section>
+  <!-- ===================== ARTICLE ROW 1 ===================== -->
+  <section class="bg-stone-100 px-4 md:px-8 pt-8 md:pt-10 pb-4 md:pb-6">
+    <div class="max-w-screen-2xl mx-auto flex gap-4 md:gap-5 overflow-x-auto pb-4 scroll-smooth"
+      style="scrollbar-width:none;">
+      <!-- Card A1 -->
+      <article class="w-64 sm:w-80 md:w-96 flex-shrink-0 flex flex-col">
+        <div class="bg-neutral-200 rounded-sm overflow-hidden h-[320px] md:h-[460px] w-full">
+          <img class="w-full h-full object-cover" alt="Espresso champion event"
+            src="https://caffemilani.it/cdn/shop/articles/Post_verticale_Caffe_Milani2u_4c9246e6-203f-4f95-aa0b-8fc109a451b4.jpg?v=1779204265&width=400" />
+        </div>
+        <div class="mt-3 md:mt-4 flex items-center gap-3">
+          <span class="bg-amber-800 rounded-full w-2.5 h-2.5 md:w-3 md:h-3 flex-shrink-0"></span>
+          <p class="text-neutral-700 font-light text-xs md:text-sm" style="font-family:'Jost',sans-serif;">
+            Professionisti &nbsp;|&nbsp; May 19, 2026</p>
+        </div>
+        <a href="#" class="mt-2 md:mt-3 text-lg md:text-2xl text-neutral-900 font-normal leading-snug hover:underline"
+          style="font-family:'Playfair Display',serif;">Espresso Italiano Champion: Caffè Milani chooses its champion</a>
+      </article>
+      <!-- Card A2 -->
+      <article class="w-64 sm:w-80 md:w-96 flex-shrink-0 flex flex-col">
+        <div class="bg-neutral-200 rounded-sm overflow-hidden h-[320px] md:h-[460px] w-full">
+          <img class="w-full h-full object-cover" alt="TUTTOFOOD partnership"
+            src="https://caffemilani.it/cdn/shop/articles/TUTTOFOOD_Tossini_e_Caffe_Milani_42433d96-fea3-4d97-bb04-3ca2fdfdfc00.jpg?v=1779204525&width=400" />
+        </div>
+        <div class="mt-3 md:mt-4 flex items-center gap-3">
+          <span class="bg-amber-800 rounded-full w-2.5 h-2.5 md:w-3 md:h-3 flex-shrink-0"></span>
+          <p class="text-neutral-700 font-light text-xs md:text-sm" style="font-family:'Jost',sans-serif;">
+            Eventi &nbsp;|&nbsp; May 18, 2026</p>
+        </div>
+        <a href="#" class="mt-2 md:mt-3 text-lg md:text-2xl text-neutral-900 font-normal leading-snug hover:underline"
+          style="font-family:'Playfair Display',serif;">TUTTOFOOD: unprecedented pairings and big news for Caffè
+          Milani's capsule line</a>
+      </article>
+      <!-- Card A3 – promo poster -->
+      <article class="w-64 sm:w-80 md:w-96 flex-shrink-0 flex flex-col">
+        <div
+          class="bg-amber-900 rounded-sm h-[320px] md:h-[460px] w-full flex flex-col items-center justify-between text-center py-8 md:py-12 px-6 md:px-8">
+          <div>
+            <p class="text-white font-light text-xs tracking-widest uppercase opacity-80 mb-1"
+              style="font-family:'Jost',sans-serif;">Caffé</p>
+            <p class="text-white font-semibold text-2xl md:text-3xl tracking-widest uppercase"
+              style="font-family:'Jost',sans-serif;">Milani</p>
+          </div>
+          <div>
+            <p class="text-3xl md:text-4xl font-black tracking-tight leading-none"
+              style="font-family:'Jost',sans-serif;"><span class="text-red-500">TUTTO</span><span
+                class="text-white">FOOD</span></p>
+            <p class="text-white font-light text-xs tracking-widest uppercase mt-1 opacity-80"
+              style="font-family:'Jost',sans-serif;">International Food Exhibition</p>
+            <p class="text-red-500 font-black text-2xl md:text-3xl tracking-tight mt-0.5"
+              style="font-family:'Jost',sans-serif;">MILANO</p>
+            <p class="text-red-400 font-light text-xs md:text-sm tracking-wider mt-2"
+              style="font-family:'Jost',sans-serif;">11 | 14 MAGGIO. 2026</p>
+          </div>
+          <div>
+            <p class="text-white font-light text-xs tracking-wider leading-relaxed opacity-70"
+              style="font-family:'Jost',sans-serif;">PAD. 8 · STAND B11<br>Fiera Milano, Rho</p>
+            <p class="text-white italic text-sm md:text-base mt-3 md:mt-4 opacity-90"
+              style="font-family:'Playfair Display',serif;">Caffé Milani meets the World</p>
+          </div>
+        </div>
+        <div class="mt-3 md:mt-4 flex items-center gap-3">
+          <span class="bg-amber-800 rounded-full w-2.5 h-2.5 md:w-3 md:h-3 flex-shrink-0"></span>
+          <p class="text-neutral-700 font-light text-xs md:text-sm" style="font-family:'Jost',sans-serif;">
+            Eventi &nbsp;|&nbsp; May 6, 2026</p>
+        </div>
+        <a href="#" class="mt-2 md:mt-3 text-lg md:text-2xl text-neutral-900 font-normal leading-snug hover:underline"
+          style="font-family:'Playfair Display',serif;">TUTTOFOOD 2026: Caffè Milani encounters new taste experiences</a>
+      </article>
+      <!-- Card A4 (narrower peek) -->
+      <article class="w-48 sm:w-56 md:w-64 flex-shrink-0 flex flex-col">
+        <div class="bg-neutral-200 rounded-sm overflow-hidden h-[320px] md:h-[460px] w-full">
+          <img class="w-full h-full object-cover" alt="Explore Milan guide"
+            src="https://caffemilani.it/cdn/shop/articles/Caffe_Milani_TUTTOFOOD_1_6e20b45d-53ea-43c7-b7e6-8939494baaa7.jpg?v=1778079460&width=400" />
+        </div>
+        <div class="mt-3 md:mt-4 flex items-center gap-3">
+          <span class="bg-amber-800 rounded-full w-2.5 h-2.5 md:w-3 md:h-3 flex-shrink-0"></span>
+          <p class="text-neutral-700 font-light text-xs md:text-sm" style="font-family:'Jost',sans-serif;">
+            Press &nbsp;|&nbsp; Apr 2026</p>
+        </div>
+        <a href="#" class="mt-2 md:mt-3 text-lg md:text-2xl text-neutral-900 font-normal leading-snug hover:underline"
+          style="font-family:'Playfair Display',serif;">Caffè Milani: Explore Milan guide</a>
+      </article>
+    </div>
+    <!-- Scroll arrow -->
+    <div class="max-w-screen-2xl mx-auto flex justify-end mt-2 pr-2">
+      <button
+        class="rounded-full bg-white border border-neutral-200 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center shadow-sm hover:bg-neutral-50 transition-all duration-200">
+        <svg class="text-neutral-700 w-3 h-3 md:w-4 md:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+        </svg>
+      </button>
+    </div>
+  </section>
+  <!-- ===================== ARTICLE ROW 2 ===================== -->
+  <section class="bg-stone-100 px-4 md:px-8 pt-8 md:pt-10 pb-4 md:pb-6">
+    <div class="max-w-screen-2xl mx-auto flex gap-4 md:gap-5 overflow-x-auto pb-4 scroll-smooth"
+      style="scrollbar-width:none;">
+      <article class="w-64 sm:w-80 md:w-96 flex-shrink-0 flex flex-col">
+        <div class="bg-neutral-200 rounded-sm overflow-hidden h-[320px] md:h-[460px] w-full">
+          <img class="object-cover w-full h-full" alt="Professional barista"
+            src="https://caffemilani.it/cdn/shop/articles/IMG_1923_6ec0adcc-bfb2-4992-a6a8-2f1664cb89d6.jpg?v=1777555600&width=1400" />
+        </div>
+        <div class="mt-3 md:mt-4 flex items-center gap-3">
+          <span class="bg-amber-800 rounded-full w-2.5 h-2.5 md:w-3 md:h-3 flex-shrink-0"></span>
+          <p class="text-neutral-700 font-light text-xs md:text-sm" style="font-family:'Jost',sans-serif;">
+            Professionisti &nbsp;|&nbsp; May 19, 2026</p>
+        </div>
+        <a href="#" class="mt-2 md:mt-3 text-lg md:text-2xl text-neutral-900 font-normal leading-snug hover:underline"
+          style="font-family:'Playfair Display',serif;">Espresso Italiano Champion: Caffè Milani chooses its champion</a>
+      </article>
+      <article class="w-64 sm:w-80 md:w-96 flex-shrink-0 flex flex-col">
+        <div class="bg-neutral-200 rounded-sm overflow-hidden h-[320px] md:h-[460px] w-full">
+          <img class="object-cover w-full h-full" alt="Coffee tasting session"
+            src="https://caffemilani.it/cdn/shop/articles/Caffe_Milani0400_717a6886-0d7c-4e53-9654-6d9d1667cfe3.jpg?v=1776440429&width=1400" />
+        </div>
+        <div class="mt-3 md:mt-4 flex items-center gap-3">
+          <span class="bg-amber-800 rounded-full w-2.5 h-2.5 md:w-3 md:h-3 flex-shrink-0"></span>
+          <p class="text-neutral-700 font-light text-xs md:text-sm" style="font-family:'Jost',sans-serif;">
+            Eventi &nbsp;|&nbsp; May 18, 2026</p>
+        </div>
+        <a href="#" class="mt-2 md:mt-3 text-lg md:text-2xl text-neutral-900 font-normal leading-snug hover:underline"
+          style="font-family:'Playfair Display',serif;">TUTTOFOOD: unprecedented pairings and big news for Caffè
+          Milani's capsule line</a>
+      </article>
+      <article class="w-64 sm:w-80 md:w-96 flex-shrink-0 flex flex-col">
+        <div class="bg-neutral-200 rounded-sm overflow-hidden h-[320px] md:h-[460px] w-full">
+          <img class="object-cover w-full h-full" alt="Coffee A to Z"
+            src="https://caffemilani.it/cdn/shop/articles/Caffe-A-Z-Blog_cfdceaa7-ae35-45ee-8091-950c95b21bde.jpg?v=1769097836&width=1400" />
+        </div>
+        <div class="mt-3 md:mt-4 flex items-center gap-3">
+          <span class="bg-amber-800 rounded-full w-2.5 h-2.5 md:w-3 md:h-3 flex-shrink-0"></span>
+          <p class="text-neutral-700 font-light text-xs md:text-sm" style="font-family:'Jost',sans-serif;">
+            Eventi &nbsp;|&nbsp; May 18, 2026</p>
+        </div>
+        <a href="#" class="mt-2 md:mt-3 text-lg md:text-2xl text-neutral-900 font-normal leading-snug hover:underline"
+          style="font-family:'Playfair Display',serif;">TUTTOFOOD: unprecedented pairings and big news for Caffè
+          Milani's capsule line</a>
+      </article>
+      <article class="w-48 sm:w-56 md:w-64 flex-shrink-0 flex flex-col">
+        <div class="bg-neutral-200 rounded-sm overflow-hidden h-[320px] md:h-[460px] w-full">
+          <img class="object-cover w-full h-full" alt="Coffee recipe collection"
+            src="https://caffemilani.it/cdn/shop/articles/Ricette_057c9177-1ddc-4559-a0b3-a50b729da7b1.png?v=1775807521&width=1000" />
+        </div>
+        <div class="mt-3 md:mt-4 flex items-center gap-3">
+          <span class="bg-amber-800 rounded-full w-2.5 h-2.5 md:w-3 md:h-3 flex-shrink-0"></span>
+          <p class="text-neutral-700 font-light text-xs md:text-sm" style="font-family:'Jost',sans-serif;">
+            Press &nbsp;|&nbsp; Apr 2026</p>
+        </div>
+        <a href="#" class="mt-2 md:mt-3 text-lg md:text-2xl text-neutral-900 font-normal leading-snug hover:underline"
+          style="font-family:'Playfair Display',serif;">Caffè Milani: Explore Milan guide</a>
+      </article>
+    </div>
+    <div class="max-w-screen-2xl mx-auto flex justify-end mt-2 pr-2">
+      <button
+        class="rounded-full bg-white border border-neutral-200 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center shadow-sm hover:bg-neutral-50 transition-all duration-200">
+        <svg class="text-neutral-700 w-3 h-3 md:w-4 md:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+        </svg>
+      </button>
+    </div>
+  </section>
+  <!-- ===================== ARTICLE ROW 3 ===================== -->
+  <section class="bg-stone-100 px-4 md:px-8 pt-8 md:pt-10 pb-4 md:pb-6">
+    <div class="max-w-screen-2xl mx-auto flex gap-4 md:gap-5 overflow-x-auto pb-4 scroll-smooth"
+      style="scrollbar-width:none;">
+      <article class="w-64 sm:w-80 md:w-96 flex-shrink-0 flex flex-col">
+        <div class="bg-neutral-200 rounded-sm overflow-hidden h-[320px] md:h-[460px] w-full">
+          <img class="h-full w-full object-cover" alt="Workshop session"
+            src="https://caffemilani.it/cdn/shop/articles/WhatsApp_Image_2026-03-31_at_15.35.11_3cf05985-4a0f-44b9-a39f-97c1c0b8b964.jpg?v=1775142964&width=1400" />
+        </div>
+        <div class="mt-3 md:mt-4 flex items-center gap-3">
+          <span class="bg-amber-800 rounded-full w-2.5 h-2.5 md:w-3 md:h-3 flex-shrink-0"></span>
+          <p class="text-neutral-700 font-light text-xs md:text-sm" style="font-family:'Jost',sans-serif;">
+            Professionisti &nbsp;|&nbsp; May 19, 2026</p>
+        </div>
+        <a href="#" class="mt-2 md:mt-3 text-lg md:text-2xl text-neutral-900 font-normal leading-snug hover:underline"
+          style="font-family:'Playfair Display',serif;">Espresso Italiano Champion: Caffè Milani chooses its champion</a>
+      </article>
+      <article class="w-64 sm:w-80 md:w-96 flex-shrink-0 flex flex-col">
+        <div class="bg-neutral-200 rounded-sm overflow-hidden h-[320px] md:h-[460px] w-full">
+          <img class="h-full w-full object-cover" alt="Mushroom risotto recipe"
+            src="https://caffemilani.it/cdn/shop/articles/POST_Ricetta_Risotto_Funghi-Caffe1.png?v=1770213139&width=1400" />
+        </div>
+        <div class="mt-3 md:mt-4 flex items-center gap-3">
+          <span class="bg-amber-800 rounded-full w-2.5 h-2.5 md:w-3 md:h-3 flex-shrink-0"></span>
+          <p class="text-neutral-700 font-light text-xs md:text-sm" style="font-family:'Jost',sans-serif;">
+            Eventi &nbsp;|&nbsp; May 18, 2026</p>
+        </div>
+        <a href="#" class="mt-2 md:mt-3 text-lg md:text-2xl text-neutral-900 font-normal leading-snug hover:underline"
+          style="font-family:'Playfair Display',serif;">TUTTOFOOD: unprecedented pairings and big news for Caffè
+          Milani's capsule line</a>
+      </article>
+      <article class="w-64 sm:w-80 md:w-96 flex-shrink-0 flex flex-col">
+        <div class="bg-neutral-200 rounded-sm overflow-hidden h-[320px] md:h-[460px] w-full">
+          <img class="h-full w-full object-cover" alt="Milani Wonderlake collaboration"
+            src="https://caffemilani.it/cdn/shop/articles/Milani-x-Wonderlake-Blog_ca0be67c-fb8c-46b6-a26b-97e8338ef0e8.png?v=1769097842&width=1400" />
+        </div>
+        <div class="mt-3 md:mt-4 flex items-center gap-3">
+          <span class="bg-amber-800 rounded-full w-2.5 h-2.5 md:w-3 md:h-3 flex-shrink-0"></span>
+          <p class="text-neutral-700 font-light text-xs md:text-sm" style="font-family:'Jost',sans-serif;">
+            Eventi &nbsp;|&nbsp; May 18, 2026</p>
+        </div>
+        <a href="#" class="mt-2 md:mt-3 text-lg md:text-2xl text-neutral-900 font-normal leading-snug hover:underline"
+          style="font-family:'Playfair Display',serif;">TUTTOFOOD: unprecedented pairings and big news for Caffè
+          Milani's capsule line</a>
+      </article>
+      <article class="w-48 sm:w-56 md:w-64 flex-shrink-0 flex flex-col">
+        <div class="bg-neutral-200 rounded-sm overflow-hidden h-[320px] md:h-[460px] w-full">
+          <img class="h-full w-full object-cover" alt="Team at event"
+            src="https://caffemilani.it/cdn/shop/articles/WhatsApp_Image_2026-01-16_at_13.38.34_b2d34ac6-6f95-44e3-8bf7-da02ebf621db.jpg?v=1772008035&width=1400" />
+        </div>
+        <div class="mt-3 md:mt-4 flex items-center gap-3">
+          <span class="bg-amber-800 rounded-full w-2.5 h-2.5 md:w-3 md:h-3 flex-shrink-0"></span>
+          <p class="text-neutral-700 font-light text-xs md:text-sm" style="font-family:'Jost',sans-serif;">
+            Press &nbsp;|&nbsp; Apr 2026</p>
+        </div>
+        <a href="#" class="mt-2 md:mt-3 text-lg md:text-2xl text-neutral-900 font-normal leading-snug hover:underline"
+          style="font-family:'Playfair Display',serif;">Caffè Milani: Explore Milan guide</a>
+      </article>
+    </div>
+    <div class="max-w-screen-2xl mx-auto flex justify-end mt-2 pr-2">
+      <button
+        class="rounded-full bg-white border border-neutral-200 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center shadow-sm hover:bg-neutral-50 transition-all duration-200">
+        <svg class="text-neutral-700 w-3 h-3 md:w-4 md:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+        </svg>
+      </button>
+    </div>
+  </section>
+  <!-- ===================== ARTICLE ROW 4 ===================== -->
+  <section class="bg-stone-100 px-4 md:px-8 pt-8 md:pt-10 pb-4 md:pb-6">
+    <div class="max-w-screen-2xl mx-auto flex gap-4 md:gap-5 overflow-x-auto pb-4 scroll-smooth"
+      style="scrollbar-width:none;">
+      <article class="w-64 sm:w-80 md:w-96 flex-shrink-0 flex flex-col">
+        <div class="bg-neutral-200 rounded-sm overflow-hidden h-[320px] md:h-[460px] w-full">
+          <img class="object-cover h-full w-full" alt="Barista competition"
+            src="https://caffemilani.it/cdn/shop/articles/WhatsApp_Image_2026-01-23_at_10.12.23_1cb62981-5438-4af6-9a43-1cb4129650b1.jpg?v=1769167169&width=1400" />
+        </div>
+        <div class="mt-3 md:mt-4 flex items-center gap-3">
+          <span class="bg-amber-800 rounded-full w-2.5 h-2.5 md:w-3 md:h-3 flex-shrink-0"></span>
+          <p class="text-neutral-700 font-light text-xs md:text-sm" style="font-family:'Jost',sans-serif;">
+            Professionisti &nbsp;|&nbsp; May 19, 2026</p>
+        </div>
+        <a href="#" class="mt-2 md:mt-3 text-lg md:text-2xl text-neutral-900 font-normal leading-snug hover:underline"
+          style="font-family:'Playfair Display',serif;">Espresso Italiano Champion: Caffè Milani chooses its champion</a>
+      </article>
+      <article class="w-64 sm:w-80 md:w-96 flex-shrink-0 flex flex-col">
+        <div class="bg-neutral-200 rounded-sm overflow-hidden h-[320px] md:h-[460px] w-full">
+          <img class="object-cover h-full w-full" alt="Christmas blend"
+            src="https://caffemilani.it/cdn/shop/articles/christmas_blend_6489a199-6d89-4d93-833e-883982723146.jpg?v=1769165369&width=1400" />
+        </div>
+        <div class="mt-3 md:mt-4 flex items-center gap-3">
+          <span class="bg-amber-800 rounded-full w-2.5 h-2.5 md:w-3 md:h-3 flex-shrink-0"></span>
+          <p class="text-neutral-700 font-light text-xs md:text-sm" style="font-family:'Jost',sans-serif;">
+            Eventi &nbsp;|&nbsp; May 18, 2026</p>
+        </div>
+        <a href="#" class="mt-2 md:mt-3 text-lg md:text-2xl text-neutral-900 font-normal leading-snug hover:underline"
+          style="font-family:'Playfair Display',serif;">TUTTOFOOD: unprecedented pairings and big news for Caffè
+          Milani's capsule line</a>
+      </article>
+      <article class="w-64 sm:w-80 md:w-96 flex-shrink-0 flex flex-col">
+        <div class="bg-neutral-200 rounded-sm overflow-hidden h-[320px] md:h-[460px] w-full">
+          <img class="object-cover h-full w-full" alt="Sustainability initiative"
+            src="https://caffemilani.it/cdn/shop/articles/caffe-milani_il-domani-si-coltiva-una-tazzina-alla-volta_d7b40e8e-451a-4ff8-a3f3-2eb084e86d78.jpg?v=1768945694&width=1200" />
+        </div>
+        <div class="mt-3 md:mt-4 flex items-center gap-3">
+          <span class="bg-amber-800 rounded-full w-2.5 h-2.5 md:w-3 md:h-3 flex-shrink-0"></span>
+          <p class="text-neutral-700 font-light text-xs md:text-sm" style="font-family:'Jost',sans-serif;">
+            Eventi &nbsp;|&nbsp; May 18, 2026</p>
+        </div>
+        <a href="#" class="mt-2 md:mt-3 text-lg md:text-2xl text-neutral-900 font-normal leading-snug hover:underline"
+          style="font-family:'Playfair Display',serif;">TUTTOFOOD: unprecedented pairings and big news for Caffè
+          Milani's capsule line</a>
+      </article>
+      <article class="w-48 sm:w-56 md:w-64 flex-shrink-0 flex flex-col">
+        <div class="bg-neutral-200 rounded-sm overflow-hidden h-[320px] md:h-[460px] w-full">
+          <img class="object-cover h-full w-full" alt="Holiday Yule log recipe"
+            src="https://caffemilani.it/cdn/shop/articles/Ricetta-del-tronchetto-natalizio-Caffe-Milani_638ffe75-b556-4a9c-b107-686b403eb600.jpg?v=1769097861&width=1400" />
+        </div>
+        <div class="mt-3 md:mt-4 flex items-center gap-3">
+          <span class="bg-amber-800 rounded-full w-2.5 h-2.5 md:w-3 md:h-3 flex-shrink-0"></span>
+          <p class="text-neutral-700 font-light text-xs md:text-sm" style="font-family:'Jost',sans-serif;">
+            Press &nbsp;|&nbsp; Apr 2026</p>
+        </div>
+        <a href="#" class="mt-2 md:mt-3 text-lg md:text-2xl text-neutral-900 font-normal leading-snug hover:underline"
+          style="font-family:'Playfair Display',serif;">Caffè Milani: Explore Milan guide</a>
+      </article>
+    </div>
+    <div class="max-w-screen-2xl mx-auto flex justify-end mt-2 pr-2">
+      <button
+        class="rounded-full bg-white border border-neutral-200 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center shadow-sm hover:bg-neutral-50 transition-all duration-200">
+        <svg class="text-neutral-700 w-3 h-3 md:w-4 md:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+        </svg>
+      </button>
+    </div>
+  </section>
+  <!-- ===================== SITE FOOTER ===================== -->
+  <footer class="bg-[#503629] w-full">
+    <div
+      class="max-w-screen-xl mx-auto px-4 md:px-10 py-10 md:py-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-10">
+      <!-- Company info -->
+      <div class="col-span-2 md:col-span-3 lg:col-span-1 flex flex-col gap-3">
+        <p class="text-white font-semibold text-sm tracking-wide" style="font-family:'Jost',sans-serif;">MILANI SPA</p>
+        <div class="text-white font-light text-sm leading-relaxed opacity-90 mt-1 flex flex-col gap-1"
+          style="font-family:'Jost',sans-serif;">
+          <p>Via Provinciale, 811 – 22030 Lipomo (CO)</p>
+          <p>VAT Number / Fiscal Code: 00809790132</p>
+          <p>Rea: CO-167127</p>
+          <p>Share capital: €2,500,000.00</p>
+        </div>
+      </div>
+      <!-- Explore links -->
+      <div class="flex flex-col gap-4">
+        <p class="text-white font-light text-sm tracking-widest lowercase opacity-70"
+          style="font-family:'Jost',sans-serif;">explore</p>
+        <nav class="mt-1 flex flex-col gap-2 md:gap-3">
+          <a href="#" class="text-white font-light text-sm hover:opacity-70 transition-opacity duration-200"
+            style="font-family:'Jost',sans-serif;">Products</a>
+          <a href="#" class="text-white font-light text-sm hover:opacity-70 transition-opacity duration-200"
+            style="font-family:'Jost',sans-serif;">Scopri il tuo caffè ideale</a>
+          <a href="#" class="text-white font-light text-sm hover:opacity-70 transition-opacity duration-200"
+            style="font-family:'Jost',sans-serif;">Caffé Milani World</a>
+          <a href="#" class="text-white font-light text-sm hover:opacity-70 transition-opacity duration-200"
+            style="font-family:'Jost',sans-serif;">Exposure</a>
+          <a href="#" class="text-white font-light text-sm hover:opacity-70 transition-opacity duration-200"
+            style="font-family:'Jost',sans-serif;">Are you a professional?</a>
+          <a href="#" class="text-white font-light text-sm hover:opacity-70 transition-opacity duration-200"
+            style="font-family:'Jost',sans-serif;">Magazine</a>
+          <a href="#" class="text-white font-light text-sm hover:opacity-70 transition-opacity duration-200"
+            style="font-family:'Jost',sans-serif;">Contacts</a>
+        </nav>
+      </div>
+      <!-- Support links -->
+      <div class="flex flex-col gap-4">
+        <p class="text-white font-light text-sm tracking-widest lowercase opacity-70 leading-snug"
+          style="font-family:'Jost',sans-serif;">customer support</p>
+        <nav class="mt-1 flex flex-col gap-2 md:gap-3">
+          <a href="#" class="text-white font-light text-sm hover:opacity-70 transition-opacity duration-200"
+            style="font-family:'Jost',sans-serif;">Customer account</a>
+          <a href="#" class="text-white font-light text-sm hover:opacity-70 transition-opacity duration-200"
+            style="font-family:'Jost',sans-serif;">Shipping Information</a>
+          <a href="#" class="text-white font-light text-sm hover:opacity-70 transition-opacity duration-200"
+            style="font-family:'Jost',sans-serif;">Returns and Refunds Policy</a>
+          <a href="#" class="text-white font-light text-sm hover:opacity-70 transition-opacity duration-200"
+            style="font-family:'Jost',sans-serif;">FAQ</a>
+          <a href="#" class="text-white font-light text-sm hover:opacity-70 transition-opacity duration-200"
+            style="font-family:'Jost',sans-serif;">Contacts</a>
+        </nav>
+      </div>
+      <!-- Legal links -->
+      <div class="flex flex-col gap-4">
+        <p class="text-white font-light text-sm tracking-widest lowercase opacity-70 leading-snug"
+          style="font-family:'Jost',sans-serif;">legal notes</p>
+        <nav class="mt-1 flex flex-col gap-2 md:gap-3">
+          <a href="#" class="text-white font-light text-sm hover:opacity-70 transition-opacity duration-200"
+            style="font-family:'Jost',sans-serif;">Terms and conditions</a>
+          <a href="#" class="text-white font-light text-sm hover:opacity-70 transition-opacity duration-200"
+            style="font-family:'Jost',sans-serif;">Privacy policy</a>
+          <a href="#" class="text-white font-light text-sm hover:opacity-70 transition-opacity duration-200"
+            style="font-family:'Jost',sans-serif;">Accessibility</a>
+        </nav>
+      </div>
+      <!-- Diamond logo -->
+      <div class="col-span-2 md:col-span-1 flex items-start justify-center pt-2">
+        <div class="w-20 h-20 md:w-28 md:h-28 rotate-45 border-2 border-white flex items-center justify-center">
+          <div class="-rotate-45 flex flex-col items-center justify-center text-center">
+            <img alt="Caffè Milani white logo"
+              src="https://caffemilani.it/cdn/shop/files/Logo_Bianco_-_CaffeMilani.svg?v=1767878770&width=150"
+              class="w-12 md:w-16" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white border-opacity-20"></div>
+    <!-- Bottom bar -->
+    <div
+      class="max-w-screen-xl mx-auto px-4 md:px-10 py-5 md:py-6 flex flex-col md:flex-row items-center justify-between flex-wrap gap-4">
+      <!-- Region & language -->
+      <div class="flex items-center gap-3 md:gap-4">
+        <button class="text-white font-light text-xs md:text-sm flex items-center gap-1 hover:opacity-70 transition-opacity"
+          style="font-family:'Jost',sans-serif;">
+          Italy (EUR €)
+          <svg class="w-3 h-3 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+          </svg>
+        </button>
+        <button class="text-white font-light text-xs md:text-sm flex items-center gap-1 hover:opacity-70 transition-opacity"
+          style="font-family:'Jost',sans-serif;">
+          English
+          <svg class="w-3 h-3 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+          </svg>
+        </button>
+      </div>
+      <!-- Copyright & payment -->
+      <div class="flex flex-col items-center gap-2 md:gap-3">
+        <p class="text-white font-light text-xs opacity-80" style="font-family:'Jost',sans-serif;">© 2026 - Caffé Milani
+          | Designed by Memesi</p>
+        <div class="flex items-center flex-wrap justify-center gap-1.5 md:gap-2">
+          <div class="bg-blue-700 rounded-sm px-1.5 py-1 flex items-center justify-center"><span
+              class="text-white font-bold text-[10px] tracking-tight" style="font-family:'Jost',sans-serif;">AMEX</span>
+          </div>
+          <div class="bg-black rounded-sm px-1.5 py-1"><span class="text-white font-semibold text-[10px]"
+              style="font-family:'Jost',sans-serif;"> Pay</span></div>
+          <div class="bg-white rounded-sm px-1.5 py-1"><span class="font-bold text-[10px]"
+              style="font-family:'Jost',sans-serif;"><span class="text-blue-600">G</span><span
+                class="text-red-500">o</span><span class="text-yellow-500">o</span><span
+                class="text-blue-600">g</span><span class="text-green-500">l</span><span
+                class="text-red-500">e</span> <span class="text-neutral-700">Pay</span></span></div>
+          <div class="bg-white rounded-sm px-1.5 py-1 flex items-center">
+            <div class="flex"><div class="w-3.5 h-3.5 rounded-full bg-red-500 opacity-90"></div><div
+                class="w-3.5 h-3.5 rounded-full bg-blue-700 opacity-90 -ml-1.5"></div></div>
+          </div>
+          <div class="bg-white rounded-sm px-1.5 py-1 flex items-center">
+            <div class="flex"><div class="w-3.5 h-3.5 rounded-full bg-red-600"></div><div
+                class="w-3.5 h-3.5 rounded-full bg-orange-400 -ml-1.5 opacity-90"></div></div>
+          </div>
+          <div class="bg-white rounded-sm px-1.5 py-1"><span class="text-blue-800 font-bold text-[10px]"
+              style="font-family:'Jost',sans-serif;">Pay<span class="text-blue-400">Pal</span></span></div>
+          <div class="bg-indigo-600 rounded-sm px-1.5 py-1"><span class="text-white font-bold text-[10px]"
+              style="font-family:'Jost',sans-serif;">Shop</span></div>
+          <div class="bg-red-700 rounded-sm px-1.5 py-1"><span class="text-white font-bold text-[10px]"
+              style="font-family:'Jost',sans-serif;">UP</span></div>
+          <div class="bg-blue-800 rounded-sm px-1.5 py-1"><span
+              class="text-white font-bold text-[10px] italic tracking-wide"
+              style="font-family:'Jost',sans-serif;">VISA</span></div>
+        </div>
+      </div>
+      <!-- Social icons -->
+      <div class="flex items-center gap-3 md:gap-5">
+        <a href="#" class="text-white opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <svg class="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+          </svg>
+        </a>
+        <a href="#" class="text-white opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <svg class="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg>
+        </a>
+        <a href="#" class="text-white opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+          </svg>
+        </a>
+        <a href="#" class="text-white opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <svg class="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+          </svg>
+        </a>
+        <a href="#" class="text-white opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <svg class="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zm2-6a2 2 0 110 4 2 2 0 010-4z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
